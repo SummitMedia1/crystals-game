@@ -92,3 +92,21 @@
 	border-color: #66afe9;
   	-webkit-filter: drop-shadow(0px 0px 30px rgba(254, 251, 75,1.0)); 	
 }
+
+   
+    @media only screen and (max-width: 640px) {
+    /* For mobile phones: */
+    [class*="col-"] {        
+        width: 100%;   
+    }
+           
+    .row #scoreboard {
+            font-size: 17px;            
+        }
+        
+    .row #randomScore, #youScore {
+            font-size: 30px;
+        }
+        
+}
+
