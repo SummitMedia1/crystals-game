@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./assets/stylesheets/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Crystals Game - Enjoy!</title>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/js/javascript.js"></script>
+</head>
+<body>
+	
+<!-- *****************   Main Panel  ****************************************************************** -->	
+
+<div class="container-main">
+
+<!-- *****************   Body Panel  ****************************************************************** -->	
+
+	<div class="row">
+
+		<div class="col-12" id="crystal-headline" align="center"><img src="./assets/images/crystals-headline.png" style="width: 75%; height: auto"></div>
+		<div class="row" style="height: 15px; margin-left: auto; margin-right: auto"></div>
+		<div class="col-1"></div>	
+		<div class="col-5" id="paragraph-text" style="font-family: Shadows Into Light; font-size: 18px; weight: 600;line-height: 1.4em; color: #BCABFF; padding: 10px 15px 10px 15px; background-color: rgba(134, 123, 187, .5); border-radius: 35px; border: 3px solid rgba(255,255,255,.4)">
+			<h1 style="color: lightblue; font-size: 27px; padding: 20px; margin: 0">Rules of the Game:</h1>
+			(1) You will be shown a random number at the start of the game.<br>
+			(2) There are four crystals below. By clicking on a crystal you will
+				add a specific amount of points to your total score.<br />
+			(3) You win the game by matching your total score to the random
+				number, you lose if your total score goes above the
+				random number.<br />
+			(4) The value of each crystal is hidden until you click on it.<br />
+			(5) Each time the game restarts the value of each crystal changes.<br />
+				<div class="col-6" id="losses" style="color: red; float: left; padding: 25px" align="left">
+					<div style="display: inline-block; font-family: HelveticaNeue; font-weight: 600; font-size: 28px; text-align: center">LOSSES</div>
+					<div id="lossesScore" style="display: inline-block; font-family: HelveticaNeue; font-weight: 800; font-size: 50px;text-align: center">0</div>
+				</div>
+
+				<div class="col-6" id="wins" style="color: lightgreen; padding: 25px" align="right">
+					<div style="display: inline-block; font-family: HelveticaNeue; font-weight: 600; font-size: 28px">WINS</div>
+					<div id="winsScore" style="display: inline-block; font-family: HelveticaNeue; font-weight: 800; font-size: 50px">0</div>
+
+				</div>		
+		</div>
+		<div class="col-1"></div>
+			
+		<div class="col-4" style="padding: 0px; height: auto; background-color: rgba(134, 123, 187, 0); position: absolute" align="center">
+			<div class="row" style="text-align: center; font-size: 35px; font-family: HelveticaNeue; font-weight: 800; letter-spacing: .25em; text-shadow: 2px 2px #ff0000;color: rgb(183, 239, 113)">S-C-O-R-A</div>
+				
+				<div class="col-6" style="height: auto; margin-top: 10px; background-color: rgba(255,255,255,.7); text-align: center; float: left; padding: 10px; color: rgb(48, 51, 55); font-family: Shadows Into Light"><strong>Magic Crystals Score:</strong>
+						<br />
+					<div id="randomScore" style="font-family:HelveticaNeue; font-weight: 900; font-size: 50px; background-color: rgba(50, 79, 154, 1.0); border-radius: 15px; color: #ffffff; padding: 15px; margin-top: 10px">0</div>
+				</div>
+				
+				<div class="col-6" style="height: auto; text-align: center; margin-top: 10px;background-color: rgba(255,255,255,.7);float: left; padding: 10px; color: rgb(48, 51, 55); font-family: Shadows Into Light"><strong>Your Score:</strong>
+						<br />
+					<div id="yourScore" style="font-family:HelveticaNeue; font-weight: 900; font-size: 50px; background-color: rgba(144, 85, 190, 1.0); border-radius: 15px; color: #ffffff; padding: 15px; margin-top: 10px">0</div>
+				</div>
+					
+					<div class="row">
+						<div class="col-12" id="crystals" style="margin-top: 36px";></div>
+					
+						<div class="col-3" id="crystal1" style="float: left"><img src="./assets/images/Crystal_generic1.png"></div>
+						<div class="col-3" id="crystal2" style="float: left"><img src="./assets/images/Crystal_generic4.png"></div>
+						<div class="col-3" id="crystal3" style="float: left"><img src="./assets/images/Crystal_generic3.png"></div>
+						<div class="col-3" id="crystal4" style="float: left"><img src="./assets/images/Crystal_generic2.png"></div>
+
+					</div>	
+			</div>
+			<div class="col-1"></div>	
+			
+	</div>
+
+	<div class="row" style="height: 60px"></div>
+	<div class="row">
+	<!-- <div class="col-12" style="padding: 20px" align="center"> -->
+
+<!--   -->			
+
+	</div>
+
+	</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>

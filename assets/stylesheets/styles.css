@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+* {
+	box-sizing: border-box;
+}
+
+.container-main {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../images/LOR-background.jpeg');
+	background-size: cover;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+
+	.col-1 {width: 8.33%; display: inline-block; padding: 0;}
+	.col-2 {width: 16.66%; display: inline-block; padding: 0;}
+	.col-3 {width: 25%; display: inline-block; padding: 0;}
+	.col-4 {width: 33.33%; display: inline-block; padding: 0;}
+	.col-5 {width: 41.66%; display: inline-block; padding: 0;}
+	.col-6 {width: 50%; display: inline-block; padding: 0;}
+	.col-7 {width: 58.33%; display: inline-block; padding: 0;}
+	.col-8 {width: 66.66%; display: inline-block; padding: 0;}
+	.col-9 {width: 75%; display: inline-block; padding: 0;}
+	.col-10 {width: 83.33%; display: inline-block; padding: 0;}
+	.col-11 {width: 91.66%; display: inline-block; padding: 0;}
+	.col-12 {width: 100%; display: inline-block; padding: 0;}
+
+#paragraph-text p, h1 {
+
+	color: #ffffff;
+	font-family: Shadows Into Light; 
+	font-size: 19px;
+	line-height: 1.25em;
+
+	}
+
+.row {
+	min-width: 100%;
+	min-height: auto;
+	padding: 0;
+	margin: 0 auto;
+}
+
+#crystal1 img {
+	width: 95%;
+	height: auto;
+}
+
+#crystal1:hover img {
+	width: 108%;
+	height: auto;
+  	-webkit-filter: drop-shadow(0px 0px 30px rgba(171, 78, 236, 1.0));
+}
+
+#crystal2 img {
+	width: 95%;
+	height: auto;
+}
+
+#crystal2:hover img {
+	width: 108%;
+	height: auto;
+	border-color: #66afe9;
+  	-webkit-filter: drop-shadow(0px 0px 30px rgba(201, 255, 138 ,1.0));	
+}
+
+#crystal3 img {
+	width: 95%;
+	height: auto;
+}
+
+#crystal3:hover img {
+	width: 108%;
+	height: auto;
+	border-color: #66afe9;
+  	-webkit-filter: drop-shadow(0px 0px 30px rgba(78, 186, 236,1.0));  	
+}
+
+#crystal4 img {
+	width: 95%;
+	height: auto;
+}
+
+#crystal4:hover img {
+	width: 108%;
+	height: auto;
+	border-color: #66afe9;
+  	-webkit-filter: drop-shadow(0px 0px 30px rgba(254, 251, 75,1.0)); 	
+}
