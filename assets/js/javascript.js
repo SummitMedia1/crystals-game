@@ -17,11 +17,12 @@ $(document).ready(function() {
     $("#randomScore").text(randomNumber);
     $("#yourScore").text(myGuess);
 
+    
     function resetGame() {
         randomNumber = Math.floor(Math.random() * 120) + 19;
         $("#randomScore").text(randomNumber);
-        $("#yourScore").text(myGuess);
         myGuess = 0;
+        $("#yourScore").text(myGuess); 
         blueRedCrystal = Math.floor(Math.random() * 12) + 1;
         cyanCrystal = Math.floor(Math.random() * 12) + 1;
         greenCrystal = Math.floor(Math.random() * 12) + 1;
@@ -37,16 +38,16 @@ $(document).ready(function() {
     function valueChecker() {
         if (myGuess === randomNumber) {
             winner ++;
-            $("#winsScore").text(parseInt(winner)); 
-            setTimeout(function(){ alert("Fill up my cup, Mazel Tov")}, 1000);
-            resetGame();
+            alert("Fill up my cup, Mazel Tov");
+            $("#winsScore").text(parseInt(winner));
+            setTimeout(resetGame, 2500);
         
         } else if 
             (myGuess > randomNumber) {
             loser ++;
-            $("#lossesScore").text(parseInt(loser));
-            setTimeout(function(){ alert("You Lose! Are you crying? There's no crying in Crystals!"); }, 1000);          
-            resetGame();    
+            alert("You Lose! Are you crying? There's no crying in Crystals!");
+            $("#lossesScore").text(parseInt(loser));        
+            setTimeout(resetGame, 2500);   
         }
     }
 		
